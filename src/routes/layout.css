@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+.btn-number {
+	@apply h-14 rounded-xl bg-zinc-800 text-lg font-medium text-white transition hover:bg-zinc-700 active:scale-95;
+}
+
+.btn-operator {
+	@apply h-14 rounded-xl bg-orange-500 text-lg font-semibold text-white transition hover:bg-orange-400 active:scale-95;
+}
+
+.btn-operator.active {
+	@apply bg-orange-600 ring-2 ring-orange-300;
+}
+
+.btn-func {
+	@apply h-14 rounded-xl bg-zinc-700 text-sm font-medium text-white transition hover:bg-zinc-600 active:scale-95;
+}
+
+.btn-equal {
+	@apply h-14 rounded-xl bg-emerald-500 text-lg font-semibold text-white transition hover:bg-emerald-400 active:scale-95;
+}
